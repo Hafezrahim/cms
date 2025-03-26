@@ -1,0 +1,75 @@
+/* About Hero */
+.about-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 100px 0;
+    margin-top: -56px; /* Adjust for fixed navbar */
+  }
+  
+  .about-hero h1 {
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Why Choose Us */
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .feature-icon {
+    margin-right: 15px;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+  }
+  
+  .feature-text h4 {
+    color: var(--dark-color);
+  }
+  
+  /* Mission & Vision */
+  .mission-vision .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .mission-vision .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Team */
+  .team-member {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .team-member h4 {
+    margin-bottom: 5px;
+  }
+  
+  .team-member p {
+    color: var(--text-light);
+  }
+  
+  @media (max-width: 768px) {
+    .about-hero {
+      padding: 80px 0;
+    }
+    
+    .about-hero h1 {
+      font-size: 2.5rem;
+    }
+  }

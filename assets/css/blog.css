@@ -1,0 +1,224 @@
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+}
+
+.post-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.post-image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.post-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.post-card:hover .post-image-container img {
+    transform: scale(1.05);
+}
+
+.post-date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.list-view .post-image-container {
+    height: 100%;
+}
+
+.view-btn {
+    border: 1px solid #dee2e6;
+    background: white;
+}
+
+.view-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.lang-btn.active {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+[dir="rtl"] {
+    text-align: right;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.image-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #666;
+}
+/* Blog Hero Section */
+.blog-hero {
+  background-color: #f8f9fa;
+  margin-top: 80px; /* Adjust based on header height */
+}
+
+.blog-hero h1 {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.search-bar {
+  max-width: 600px;
+}
+
+/* Blog Posts Section */
+.blog-posts {
+  background-color: #fff;
+}
+
+.post-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.post-image-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.post-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.post-card:hover .post-image-container img {
+  transform: scale(1.05);
+}
+
+.post-date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+/* List View Specific Styles */
+.list-view .post-image-container {
+  height: 100%;
+  min-height: 250px;
+}
+
+/* Image Loading State */
+.image-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #666;
+}
+
+/* Social Float Buttons */
+.social-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.social-float a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.social-float a:hover {
+  transform: translateY(-5px);
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .post-date {
+  left: auto;
+  right: 10px;
+}

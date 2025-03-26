@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS Hafez - Blog</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/blog.css">
+</head>
+<body>
+  <!-- Header will be loaded here -->
+  <div id="header"></div>
+
+  <!-- Blog Hero -->
+  <section class="blog-hero py-5 text-center">
+    <div class="container">
+      <h1 class="display-4 mb-4" data-i18n="blog">Blog</h1>
+      <div class="search-bar mx-auto">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search..." data-i18n="searchPlaceholder" id="searchInput">
+          <button class="btn btn-primary" type="button" id="searchButton" data-i18n="search">Search</button>
+        </div>
+      </div>
+      <div class="view-options mt-3">
+        <button class="btn btn-outline-secondary view-btn active" data-view="grid">
+          <i class="fas fa-th-large"></i> <span data-i18n="gridView">Grid</span>
+        </button>
+        <button class="btn btn-outline-secondary view-btn" data-view="list">
+          <i class="fas fa-list"></i> <span data-i18n="listView">List</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Posts Section -->
+  <section class="blog-posts py-5">
+    <div class="container">
+      <!-- Single posts container for both views -->
+      <div class="row" id="blogPostsContainer">
+        <!-- Posts will be loaded dynamically here -->
+      </div>
+      
+      <!-- Pagination -->
+      <nav aria-label="Page navigation" class="mt-5">
+        <ul class="pagination justify-content-center" id="pagination">
+          <!-- Pagination will be inserted here by JavaScript -->
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Footer will be loaded here -->
+  <div id="footer"></div>
+
+  <!-- Social Media Float Buttons -->
+  <div class="social-float">
+    <a href="https://wa.me/201007419344" class="whatsapp" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://facebook.com/yourpage" class="facebook" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/sheets.js"></script>
+  <script src="assets/js/blog.js"></script>
+</body>
+</html>
